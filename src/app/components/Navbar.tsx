@@ -5,9 +5,11 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const navItems = [
-  { href: "/", label: "Beranda" },
-  { href: "/loa", label: "Daftar LOA" },
-  { href: "/loa/new", label: "Buat LOA" },
+  { href: "/", label: "Home" },
+  { href: "/author", label: "Ajukan LOA" },
+  { href: "/author/daftar-loa", label: "Daftar LOA" },
+  { href: "/tentang", label: "Tentang" },
+  { href: "/kontak", label: "Kontak" },
 ];
 
 export default function Navbar() {
@@ -20,7 +22,7 @@ export default function Navbar() {
           <div className="relative w-8 h-8 rounded-md overflow-hidden bg-white/20 flex items-center justify-center">
             <Image src="/eloa-logo.png" alt="E-LOA" width={32} height={32} className="object-contain" />
           </div>
-          <span className="font-semibold tracking-tight text-base text-white">E-LOA Rumah Jurnal</span>
+          <span className="font-semibold tracking-tight text-base text-white">Rumah Jurnal</span>
         </Link>
 
         <nav className="hidden sm:flex items-center gap-1.5">
@@ -50,11 +52,11 @@ export default function Navbar() {
             Login
           </Link>
           <Link
-            href="/loa/new"
+            href="/author"
             className="inline-flex items-center justify-center h-10 px-4 rounded-md text-sm font-medium text-white"
             style={{ backgroundColor: "var(--brand-primary)" }}
           >
-            Buat LOA
+            Ajukan LOA Sekarang
           </Link>
         </div>
       </div>
