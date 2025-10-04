@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brand-teal: #00BFBF;
+  --brand-teal-dark: #0b6b6b;
+  --brand-primary: #6E63FF;
 }
 
 @theme inline {
@@ -24,3 +27,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Utilities */
+.btn-primary {
+  background: var(--brand-primary);
+  color: #fff;
+}
+.btn-primary:hover { filter: brightness(1.08); }
