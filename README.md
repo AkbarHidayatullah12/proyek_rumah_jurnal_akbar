@@ -1,40 +1,55 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Proyek Rumah Jurnal Akbar
 
-## Getting Started
+Aplikasi manajemen jurnal ilmiah "Rumah Jurnal" yang dibangun menggunakan Next.js. Aplikasi ini memungkinkan pengelolaan naskah jurnal, mulai dari submisi oleh penulis, review, hingga penerbitan.
 
-First, run the development server:
+## Fitur Utama
+
+- **Autentikasi & Otorisasi**: Sistem login untuk berbagai peran (Penulis, Editor, Reviewer).
+- **Manajemen Submisi**: Penulis dapat mengirimkan naskah dan memantau status revisi.
+- **Workflow Editorial**: Editor dan Reviewer dapat memeriksa, menolak, atau menyetujui naskah.
+- **Manajemen User**: Pengelolaan profil pengguna dan akses.
+- **Notifikasi/Tracking**: Pemantauan status naskah secara real-time.
+
+## Teknologi yang Digunakan
+
+- **Frontend**: Next.js 14+ (App Router), Tailwind CSS
+- **Backend/Database**: MySQL
+- **Bahasa**: TypeScript / JavaScript
+- **Version Control**: Git / GitHub
+
+## Cara Menjalankan Proyek
+
+Ikuti langkah-langkah berikut untuk menjalankan proyek di komputer lokal Anda:
+
+### 1. Persiapan Awal
+Pastikan Anda sudah menginstal:
+- [Node.js](https://nodejs.org/) (versi LTS terbaru disarankan)
+- [Git](https://git-scm.com/)
+- Database MySQL
+
+### 2. Instalasi Dependensi
+Jalankan perintah berikut di terminal:
+
+```bash
+npm install
+```
+
+### 3. Konfigurasi Database
+1. Pastikan server MySQL Anda berjalan (misal via XAMPP atau service MySQL).
+2. Konfigurasikan file `.env.local` Anda dengan kredensial database yang sesuai (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME).
+3. Jika perlu, jalankan skrip migrasi atau populasi database yang tersedia (contoh: `node repopulate_db.js`).
+
+### 4. Menjalankan Server Development
+Setelah semua terinstal, jalankan server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka [http://localhost:3000](http://localhost:3000) di browser Anda.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Kontribusi
+Silakan lakukan *Pull Request* jika ingin berkontribusi. Pastikan untuk selalu melakukan *git pull* sebelum memulai pekerjaan baru untuk menghindari konflik.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# proyek_rumah_jurnal_akbar
->>>>>>> f0e2c65e4733a3c5657981467550d00bf20ea23c
+---
+Ilmu Komputer - Proyek Rumah Jurnal
