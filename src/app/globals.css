@@ -1,18 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --brand-teal: #00BFBF;
-  --brand-teal-dark: #0b6b6b;
-  --brand-primary: #6E63FF;
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  --background: #F3F4F6;
+  --foreground: #171717;
+
+  /* Brand */
+  --brand-primary: #00C4B4;
+  --brand-primary-dark: #00A89D;
+
+  /* Status Colors */
+  --status-waiting-bg: #FEF3C7;
+  --status-waiting-text: #D97706;
+
+  --status-revisi-bg: #FEE2E2;
+  --status-revisi-text: #DC2626;
+
+  --status-approved-bg: #DCFCE7;
+  --status-approved-text: #16A34A;
+
+  --status-draft-bg: #F3F4F6;
+  --status-draft-text: #4B5563;
+
+  /* Action */
+  --action-danger: #EF4444;
+
+  --page-bg: #F0F9FA;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,15 +40,39 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
-/* Utilities */
-.btn-primary {
-  background: var(--brand-primary);
-  color: #fff;
+/* Custom Components */
+
+.badge-waiting {
+  @apply bg-[#FEF3C7] text-[#D97706];
 }
-.btn-primary:hover { filter: brightness(1.08); }
+
+.badge-revisi {
+  @apply bg-[#FEE2E2] text-[#DC2626];
+}
+
+.badge-approved {
+  @apply bg-[#DCFCE7] text-[#16A34A];
+}
+
+.badge-draft {
+  @apply bg-[#F3F4F6] text-[#4B5563];
+}
+
+.btn-primary {
+  @apply bg-[#00C4B4] text-white transition-all;
+}
+
+.btn-primary:hover {
+  filter: brightness(110%);
+}

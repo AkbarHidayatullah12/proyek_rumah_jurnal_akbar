@@ -1,0 +1,3 @@
+User found: 0
+Re-inserted editor user with fresh hash.
+Immediate verification match: true

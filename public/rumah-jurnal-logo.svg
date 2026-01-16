@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- House outline -->
+  <path d="M200 60L110 130V280C110 290 115 300 125 300H275C285 300 290 290 290 280V130L200 60Z" stroke="#0066CC" stroke-width="12" stroke-linejoin="round"/>
+  
+  <!-- Book inside house -->
+  <path d="M180 160V240C180 250 185 255 195 255H205C215 255 220 250 220 240V160" stroke="#0066CC" stroke-width="10" stroke-linejoin="round"/>
+  <line x1="200" y1="160" x2="200" y2="255" stroke="#0066CC" stroke-width="10" stroke-linecap="round"/>
+  <path d="M160 200Q180 190 200 190Q220 190 240 200" stroke="#0066CC" stroke-width="8" stroke-linecap="round"/>
+  <path d="M160 220Q180 210 200 210Q220 210 240 220" stroke="#0066CC" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Pen/Quill icon on top -->
+  <circle cx="200" cy="100" r="8" fill="#0066CC"/>
+  <path d="M200 108V125" stroke="#0066CC" stroke-width="6" stroke-linecap="round"/>
+  <path d="M195 130L200 140L205 130" stroke="#0066CC" stroke-width="6" stroke-linejoin="round" fill="#0066CC"/>
+  
+  <!-- Text below -->
+  <text x="200" y="340" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0066CC" text-anchor="middle">Rumah Jurnal</text>
+  <text x="200" y="375" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#0066CC" text-anchor="middle">Pustaka Galeri</text>
+  <text x="200" y="410" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#0066CC" text-anchor="middle">Mandiri</text>
+</svg>

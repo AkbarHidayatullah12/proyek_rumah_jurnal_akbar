@@ -1,0 +1,5 @@
+Submissions URLs should be:
+/editor/submission/1
+/editor/submission/2
+/editor/submission/3
+/editor/submission/4

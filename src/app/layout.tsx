@@ -1,39 +1,26 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Sistem Informasi E-LOA | Rumah Jurnal",
-  description: "Sistem Informasi E-LOA (Letter of Acceptance) Rumah Jurnal",
+  title: 'E-LOA Rumah Jurnal',
+  description: 'Admin Portal Sistem E-LOA',
 };
+
+import { ToastProvider } from '@/app/components/ToastProvider';
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Navbar />
-
-        <div className="min-h-[calc(100vh-56px)] bg-white">{children}</div>
-
-        <Footer />
+    <html lang="id">
+      <body>
+        <ToastProvider>
+          {/* server-rendered full-viewport background to avoid CSS class hydration differences */}
+          <div className="fixed inset-0 z-0 bg-[var(--page-bg,#F0F9FA)]" />
+          {children}
+        </ToastProvider>
       </body>
     </html>
   );

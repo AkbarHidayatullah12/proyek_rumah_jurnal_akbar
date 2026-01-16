@@ -1,0 +1,1 @@
+Success. Tables: [{"Tables_in_rumah_jurnal":"activity_logs"},{"Tables_in_rumah_jurnal":"submissions"},{"Tables_in_rumah_jurnal":"users"}]
